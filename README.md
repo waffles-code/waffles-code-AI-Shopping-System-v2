@@ -26,8 +26,8 @@ app that will feed the customers eyes what they are most interested. It recommen
 - Recommendations based on decision tree
 
 ## Important links
-Tiaga : https://tree.taiga.io/project/waffles-ai-shopping-system-v2/
-Jiara : https://wedontbyte19.atlassian.net/jira/software/projects/ASSV/boards
+Tiaga : https://tree.taiga.io/project/waffles-ai-shopping-system-v2/ <br />
+Jiara : https://wedontbyte19.atlassian.net/jira/software/projects/ASSV/boards <br />
 Documentation : https://docs.google.com/document/d/1fOcOD5PfAJeSOr_vy4FCrDGsdkLrttcEqX3IggBki58/edit?usp=sharing
 
 
