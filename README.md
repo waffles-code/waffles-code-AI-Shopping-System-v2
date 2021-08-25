@@ -10,8 +10,6 @@ We don't byte
 
 A complete Flutter application written in dart with firebase implementation.
 
-## Website Link
-https://we-don-t-byte---ass.firebaseapp.com/#/
 
 ## Description
 
@@ -23,6 +21,13 @@ app that will feed the customers eyes what they are most interested. It recommen
 # THE WEB APPLICATION IS STILL UNDER DEVELOPMENT
 
 ## TO DO 
-- Decision Tree 
+- Categorise data accurately
+- Fix location API
+- Recommendations based on decision tree
+
+## Important links
+Tiaga : https://tree.taiga.io/project/waffles-ai-shopping-system-v2/ <br />
+Jiara : https://wedontbyte19.atlassian.net/jira/software/projects/ASSV/boards <br />
+Documentation : https://docs.google.com/document/d/1fOcOD5PfAJeSOr_vy4FCrDGsdkLrttcEqX3IggBki58/edit?usp=sharing
 
 
