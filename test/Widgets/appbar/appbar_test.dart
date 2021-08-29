@@ -1,16 +1,15 @@
-import 'package:aishop/Past_purchase/past_purchase.dart';
-import 'package:aishop/screens/Profile_page/edit_profile.dart';
-import 'package:aishop/screens/Cart/checkout_page.dart';
-import 'package:aishop/screens/Wishlist/wishlist_page.dart';
-import 'package:aishop/screens/Settings/settings.dart';
-import 'package:aishop/widgets/App_bar/appbar.dart';
+import 'package:aishop/screens/cart/checkout_page.dart';
+import 'package:aishop/screens/past_purchases/pastpurchase.dart';
+import 'package:aishop/screens/profile_page/edit_profile.dart';
+import 'package:aishop/screens/settings/settings.dart';
+import 'package:aishop/screens/wishlist/wishlistscreen.dart';
+import 'package:aishop/widgets/appbar/appbar.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
 class MockContext extends Mock implements BuildContext {}
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Widget testWidget;
@@ -71,5 +70,4 @@ void main() {
   print('');
   })
   });
-
 }

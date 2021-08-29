@@ -1,9 +1,9 @@
-import 'package:aishop/Styles/textlink.dart';
+import 'package:aishop/styles/textlink.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  Widget makeTestableWidget({required Widget child}) {
+   Widget makeTestableWidget({required Widget child}) {
     return MaterialApp(
       home: child,
     );
@@ -15,6 +15,6 @@ void main() {
       align: Alignment.centerRight,
       press: () {},
     );
-    await tester.pumpWidget(makeTestableWidget(child: textLink));
+    
   });
 }

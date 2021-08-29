@@ -1,9 +1,6 @@
-import 'package:aishop/icons/icons.dart';
-import 'package:aishop/screens/Categories/books.dart';
-import 'package:aishop/screens/Homepage/home_page.dart';
-import 'package:aishop/widgets/category.dart';
-import 'package:aishop/widgets/category_card.dart';
-import 'package:aishop/widgets/kitchen.dart';
+import 'package:aishop/screens/homepage/homepage.dart';
+import 'package:aishop/widgets/category/category.dart';
+import 'package:aishop/widgets/category/category_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -16,9 +13,8 @@ void main() {
       home: child,
     );
   }
-
-  testWidgets('category cards visible ...', (tester) async {
-    Category cat = Category();
+  testWidgets('category card ...', (tester) async {
+     Category cat = Category();
     await tester.pumpWidget(makeTestableWidget(child: cat));
 
     expect(find.byType(InkWell), findsWidgets);
