@@ -1,8 +1,8 @@
-import 'package:aishop/screens/Homepage/home_page.dart';
-import 'package:aishop/screens/Login/login_page.dart';
+import 'package:aishop/screens/homepage/homepage.dart';
+import 'package:aishop/screens/login/loginscreen.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:flutter/material.dart';
-import 'screens/Login/login_page.dart';
+
 void main() {
   runApp(MyApp());
 }

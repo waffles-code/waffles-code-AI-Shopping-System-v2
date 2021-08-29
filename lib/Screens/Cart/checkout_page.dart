@@ -1,10 +1,11 @@
-import 'package:aishop/Screens/Cart/Components/order_review.dart';
-import 'package:flutter/material.dart';
-import 'package:aishop/Screens/Cart/Components/checkout_address.dart';
+
+
+import 'package:aishop/screens/address/checkoutaddress.dart';
+import 'package:aishop/screens/cart/components/order_review.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
-import '../../Styles/theme.dart';
+import 'package:flutter/material.dart';
 
 User _user = FirebaseAuth.instance.currentUser!;
 
