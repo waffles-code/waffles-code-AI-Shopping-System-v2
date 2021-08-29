@@ -1,11 +1,8 @@
-import 'package:aishop/Styles/icon_button.dart';
-import 'package:aishop/Styles/round_textfield.dart';
-import 'package:aishop/screens/Cart/checkout_page.dart';
-import 'package:aishop/screens/Login/login_page.dart';
-import 'package:aishop/Styles/theme.dart';
+import 'package:aishop/screens/cart/checkout_page.dart';
+import 'package:aishop/styles/icon_button.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/authentication.dart';
-import 'package:aishop/Widgets/App_bar/appbar.dart';
-
+import 'package:aishop/widgets/appbar/appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

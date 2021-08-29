@@ -1,19 +1,20 @@
-import 'package:aishop/Styles/google_round_button.dart';
-import 'package:aishop/Styles/sidepanel.dart';
-import 'package:aishop/Styles/textlink.dart';
-import 'package:aishop/Styles/or_divider.dart';
-import 'package:aishop/Styles/round_button.dart';
-import 'package:aishop/Styles/round_passwordfield.dart';
-import 'package:aishop/Styles/round_textfield.dart';
-import 'package:aishop/Styles/title.dart';
-import 'package:aishop/Screens/Homepage/home_page.dart';
-import 'package:aishop/Screens/Signup/signup_page.dart';
-import 'package:aishop/Styles/theme.dart';
+
+import 'package:aishop/screens/homepage/homepage.dart';
+import 'package:aishop/screens/signup/registerscreen.dart';
+import 'package:aishop/services/networking.dart';
+import 'package:aishop/styles/google_round_button.dart';
+import 'package:aishop/styles/or_divider.dart';
+import 'package:aishop/styles/round_button.dart';
+import 'package:aishop/styles/round_passwordfield.dart';
+import 'package:aishop/styles/round_textfield.dart';
+import 'package:aishop/styles/sidepanel.dart';
+import 'package:aishop/styles/textlink.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/styles/title.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:aishop/Services/networking.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -88,11 +89,12 @@ class _LoginScreenState extends State<LoginScreen> {
         desiredAccuracy: LocationAccuracy.bestForNavigation);
     print("done with Geolocator+${position.longitude}");
     longitude = await position.longitude.toString();
-    latitude = position.latitude.toString();
+    latitude = await position.latitude.toString();
     NetworkHelper networkHelper = await NetworkHelper(
         'http://api.positionstack.com/v1/reverse?access_key=5e65a2bf717cff420bade43bf75f0cec&query=$latitude,$longitude');
     await networkHelper.getData();
     cityname = networkHelper.cityname;
+
   }
 
 //test keys
@@ -344,6 +346,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                                   RegisterScreen(
                                                     cityName:
                                                         cityname.toString(),
+                                                    longitude: longitude,
+                                                    latitude: latitude,
                                                   ))),
                                     })
                             //=====================================================

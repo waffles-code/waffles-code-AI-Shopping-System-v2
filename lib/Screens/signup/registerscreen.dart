@@ -1,24 +1,26 @@
-import 'package:aishop/Styles/google_round_button.dart';
-import 'package:aishop/Styles/or_divider.dart';
-import 'package:aishop/Styles/round_button.dart';
-import 'package:aishop/Styles/round_passwordfield.dart';
-import 'package:aishop/Styles/round_textfield.dart';
-import 'package:aishop/Styles/sidepanel.dart';
-import 'package:aishop/Styles/textlink.dart';
-import 'package:aishop/Styles/title.dart';
-import 'package:aishop/screens/Login/login_page.dart';
-import 'package:aishop/screens/Email_verification/verification_page.dart';
+import 'package:aishop/screens/login/loginscreen.dart';
+import 'package:aishop/screens/verification_page/verifyscreen.dart';
+import 'package:aishop/styles/google_round_button.dart';
+import 'package:aishop/styles/or_divider.dart';
+import 'package:aishop/styles/round_button.dart';
+import 'package:aishop/styles/round_passwordfield.dart';
+import 'package:aishop/styles/round_textfield.dart';
+import 'package:aishop/styles/sidepanel.dart';
+import 'package:aishop/styles/textlink.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/styles/title.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import '../../Styles/theme.dart';
 import 'package:line_icons/line_icons.dart';
 
 class RegisterScreen extends StatefulWidget {
-  RegisterScreen({this.cityName});
+  RegisterScreen({this.cityName,this.longitude,this.latitude});
   final cityName;
+  final longitude;
+  final latitude;
 
   @override
   State<StatefulWidget> createState() {
@@ -395,7 +397,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           'email': userEmailController.text,
                                           'fname': userFirstNameController.text,
                                           'location': widget.cityName,
-                                          'lname': userLastNameController.text
+                                          'lname': userLastNameController.text,
+                                          'longitude':widget.longitude,
+                                          'latitude':widget.latitude
                                         });
                                       } else {
                                         _firestore
@@ -409,7 +413,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           'fname': userFirstNameController.text,
                                           'location':
                                               userLocationController.text,
-                                          'lname': userLastNameController.text
+                                          'lname': userLastNameController.text,
+
                                         });
                                       }
                                       loginStatus =

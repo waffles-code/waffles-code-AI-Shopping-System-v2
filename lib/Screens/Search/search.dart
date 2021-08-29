@@ -1,10 +1,9 @@
 import 'dart:ui';
-import 'package:aishop/screens/Search/Components/searchservice.dart';
-import 'package:aishop/widgets/Product_model/product_model.dart';
+import 'package:aishop/screens/search/components/searchservice.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
-import '../../Styles/theme.dart';
 
 class Search extends StatefulWidget {
   @override
