@@ -1,6 +1,7 @@
+import 'package:aishop/styles/theme.dart';
 import 'package:flutter/material.dart';
 
-import '../Styles/theme.dart';
+
 
 class CategoryCard extends StatelessWidget {
   final Icon icon;

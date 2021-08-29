@@ -1,8 +1,7 @@
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:aishop/widgets/Product_model/product_model.dart';
-
-import '../Styles/theme.dart';
 
 //kitchen model
 class Kitchen extends StatelessWidget {

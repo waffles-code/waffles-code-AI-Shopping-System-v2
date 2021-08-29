@@ -1,8 +1,9 @@
-import 'package:aishop/screens/Categories/beauty.dart';
-import 'package:aishop/screens/Categories/books.dart';
-import 'package:aishop/screens/Categories/clothes.dart';
-import 'package:aishop/screens/Categories/kitchen.dart';
-import 'package:aishop/screens/Categories/tech.dart';
+
+import 'package:aishop/screens/categories/beauty.dart';
+import 'package:aishop/screens/categories/books.dart';
+import 'package:aishop/screens/categories/clothes.dart';
+import 'package:aishop/screens/categories/kitchen.dart';
+import 'package:aishop/screens/categories/tech.dart';
 import 'package:flutter/material.dart';
 import 'package:aishop/icons/icons.dart';
 import 'category_card.dart';

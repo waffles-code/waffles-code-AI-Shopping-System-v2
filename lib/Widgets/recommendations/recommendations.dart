@@ -1,7 +1,8 @@
 import 'dart:math';
 
+
 import 'package:aishop/utils/authentication.dart';
-import 'package:aishop/Widgets/Product_model/product_model.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 

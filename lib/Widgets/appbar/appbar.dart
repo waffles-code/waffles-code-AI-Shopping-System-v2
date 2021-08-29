@@ -1,17 +1,17 @@
-import 'package:aishop/Services/prod_num_badges.dart';
-import 'package:aishop/Past_purchase/past_purchase.dart';
-import 'package:aishop/screens/Profile_page/edit_profile.dart';
+
+import 'package:aishop/screens/cart/checkout_page.dart';
 import 'package:aishop/icons/icons.dart';
-import 'package:aishop/screens/Cart/checkout_page.dart';
-import 'package:aishop/screens/Login/login_page.dart';
-import 'package:aishop/screens/Wishlist/wishlist_page.dart';
-import 'package:aishop/screens/Settings/settings.dart';
-import 'package:aishop/utils/authentication.dart';
-import 'package:badges/badges.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
 import 'package:aishop/addons/popup_menu_consts.dart';
-import '../../Styles/theme.dart';
+import 'package:aishop/screens/login/loginscreen.dart';
+import 'package:aishop/screens/past_purchases/pastpurchase.dart';
+import 'package:aishop/screens/profile_page/edit_profile.dart';
+import 'package:aishop/screens/settings/settings.dart';
+import 'package:aishop/screens/wishlist/wishlistscreen.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/utils/authentication.dart';
+import 'package:aishop/utils/prod_num_badges.dart';
+import 'package:badges/badges.dart';
+import 'package:flutter/material.dart';
 
 void choiceAction(String choice) {
   if (choice == Constants.profile) {

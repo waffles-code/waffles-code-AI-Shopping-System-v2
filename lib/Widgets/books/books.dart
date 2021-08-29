@@ -1,19 +1,19 @@
+
+
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:aishop/widgets/Product_model/product_model.dart';
 
-import '../Styles/theme.dart';
-
-class Beauty extends StatelessWidget {
+class Books extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 0,
       height: 400,
       child: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection("Products")
-            .where("category", isEqualTo: "Shoes")
+            .where("category", isEqualTo: "Books")
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
@@ -32,13 +32,12 @@ class Beauty extends StatelessWidget {
                   mainAxisSpacing: 0),
               itemBuilder: (context, index) {
                 return ProductCard(
-                  snapshot.data!.docs[index].id,
-                  snapshot.data!.docs[index].get('url'),
-                  snapshot.data!.docs[index].get('name'),
-                  snapshot.data!.docs[index].get('description'),
-                  snapshot.data!.docs[index].get('price').toString(),
-                  snapshot.data!.docs[index].get('stockamt'),
-                );
+                    snapshot.data!.docs[index].id,
+                    snapshot.data!.docs[index].get('url'),
+                    snapshot.data!.docs[index].get('name'),
+                    snapshot.data!.docs[index].get('description'),
+                    snapshot.data!.docs[index].get('price').toString(),
+                    snapshot.data!.docs[index].get('stockamt'));
               },
               itemCount: snapshot.data!.docs.length,
             );

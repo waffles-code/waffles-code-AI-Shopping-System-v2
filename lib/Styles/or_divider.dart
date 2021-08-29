@@ -1,4 +1,5 @@
-import 'package:aishop/Styles/theme.dart';
+
+import 'package:aishop/styles/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 

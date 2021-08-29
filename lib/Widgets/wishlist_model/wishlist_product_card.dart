@@ -1,8 +1,8 @@
-import 'package:aishop/Services/historytracker.dart';
-import 'package:aishop/Styles/theme.dart';
+import 'package:aishop/services/historytracker.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/cart.dart';
 import 'package:aishop/utils/wishlist.dart';
-import 'package:aishop/widgets/Modal_popup/modal_model.dart';
+import 'package:aishop/widgets/modal_popup/modal_model.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types

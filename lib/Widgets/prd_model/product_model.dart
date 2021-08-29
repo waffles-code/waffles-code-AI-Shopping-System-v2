@@ -1,13 +1,16 @@
-import 'package:aishop/Services/historytracker.dart';
-import 'package:aishop/Screens/Cart/Components/order_review.dart';
-import 'package:aishop/Services/database_manager.dart';
+
 import 'package:aishop/icons/icons.dart';
+import 'package:aishop/screens/cart/components/order_review.dart';
+import 'package:aishop/services/databasemanager.dart';
+import 'package:aishop/services/historytracker.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/cart.dart';
 import 'package:aishop/utils/wishlist.dart';
+import 'package:aishop/widgets/modal_popup/modal_model.dart';
+
 import 'package:flutter/material.dart';
 
-import '../../Styles/theme.dart';
-import '../Modal_popup/modal_model.dart';
+
 
 //model for one item
 //take product details as parameters and return and clickable countainer that displays the image & price of product

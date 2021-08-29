@@ -1,9 +1,10 @@
-import 'package:aishop/screens/Homepage/home_page.dart';
-import 'package:aishop/Styles/theme.dart';
+
+import 'package:aishop/screens/homepage/homepage.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-
+import 'package:line_icons/line_icons.dart';
 
 //this class is used to design the google button with a white background and a black border
 

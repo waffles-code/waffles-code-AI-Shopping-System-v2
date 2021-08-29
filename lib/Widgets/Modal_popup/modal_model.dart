@@ -1,16 +1,16 @@
-import 'package:aishop/Services/historytracker.dart';
-import 'package:aishop/utils/cart.dart';
-import 'package:aishop/utils/wishlist.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:aishop/icons/icons.dart';
 
-import '../../Styles/theme.dart';
 
 //model for modal pop up
 //displays image , price, name, description
 
 // ignore: non_constant_identifier_names
+import 'package:aishop/icons/icons.dart';
+import 'package:aishop/services/historytracker.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/utils/cart.dart';
+import 'package:aishop/utils/wishlist.dart';
+import 'package:flutter/material.dart';
+
 Modal(context, id, imgUrl, name, description, price, stockamt) {
   int amount = stockamt;
   bool toggle = false;

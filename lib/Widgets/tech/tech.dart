@@ -1,18 +1,19 @@
-import 'package:aishop/widgets/Product_model/product_model.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 
-import '../Styles/theme.dart';
 
-class Books extends StatelessWidget {
+class Tech extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 0,
       height: 400,
       child: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection("Products")
-            .where("category", isEqualTo: "Books")
+            .where("category", isEqualTo: "Tech")
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
