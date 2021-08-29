@@ -1,15 +1,13 @@
-import 'package:aishop/Services/historytracker.dart';
-import 'package:aishop/Screens/Delivery/checkout_delivary.dart';
-import 'package:aishop/Past_purchase/past_purchase.dart';
-import 'package:aishop/Styles/textlink.dart';
-import 'package:aishop/screens/Homepage/home_page.dart';
-import 'package:aishop/widgets/App_bar/appbar.dart';
+import 'package:aishop/screens/cart/components/order_review.dart';
+import 'package:aishop/screens/delivery/components/checkoutdelivary.dart';
+import 'package:aishop/screens/homepage/homepage.dart';
+import 'package:aishop/screens/past_purchases/pastpurchase.dart';
+import 'package:aishop/services/historytracker.dart';
+import 'package:aishop/styles/textlink.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/appbar/appbar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:aishop/Screens/Cart/Components/order_review.dart';
-import '../../Delivery/checkout_delivary.dart';
-
-import '../../../Styles/theme.dart';
 
 // ignore: must_be_immutable
 class CheckOutPayment extends StatelessWidget {

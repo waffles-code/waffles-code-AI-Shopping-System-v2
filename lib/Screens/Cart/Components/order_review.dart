@@ -1,10 +1,9 @@
+import 'package:aishop/screens/cart/checkout_page.dart';
+import 'package:aishop/styles/theme.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:aishop/screens/Cart/checkout_page.dart';
 import 'package:aishop/utils/cart.dart';
-
-import '../../../Styles/theme.dart';
 
 double g = 0.00;
 int sizethis = 0;

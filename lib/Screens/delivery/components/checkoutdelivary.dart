@@ -1,8 +1,7 @@
-import 'package:aishop/Screens/Cart/Components/checkout_payment.dart';
-import 'package:aishop/Widgets/App_bar/appbar.dart';
+import 'package:aishop/screens/cart/components/checkoutpayment.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/appbar/appbar.dart';
 import 'package:flutter/material.dart';
-
-import '../../Styles/theme.dart';
 
 var n = 0;
 

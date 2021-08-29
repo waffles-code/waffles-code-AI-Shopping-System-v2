@@ -1,12 +1,10 @@
 import 'dart:ui';
-
-import 'package:aishop/Screens/Cart/Components/order_review.dart';
-import 'package:aishop/widgets/App_bar/appbar.dart';
-import 'package:aishop/widgets/Product_model/product_model.dart';
+import 'package:aishop/screens/cart/components/order_review.dart';
+import 'package:aishop/styles/theme.dart';
+import 'package:aishop/widgets/appbar/appbar.dart';
+import 'package:aishop/widgets/prd_model/product_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
-import '../../Styles/theme.dart';
 
 class ClothesScreen extends StatefulWidget {
   @override
