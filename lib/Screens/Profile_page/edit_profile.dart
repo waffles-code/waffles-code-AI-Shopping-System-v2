@@ -1,4 +1,3 @@
-
 import 'package:aishop/screens/cart/checkout_page.dart';
 import 'package:aishop/screens/settings/settings.dart';
 import 'package:aishop/styles/icon_button.dart';
@@ -6,7 +5,6 @@ import 'package:aishop/styles/round_textfield.dart';
 import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:aishop/widgets/appbar/appbar.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

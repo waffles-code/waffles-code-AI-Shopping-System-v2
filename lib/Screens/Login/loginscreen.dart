@@ -1,4 +1,3 @@
-
 import 'package:aishop/screens/homepage/homepage.dart';
 import 'package:aishop/screens/signup/registerscreen.dart';
 import 'package:aishop/services/networking.dart';

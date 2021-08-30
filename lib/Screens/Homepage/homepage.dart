@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:aishop/screens/cart/checkout_page.dart';
 import 'package:aishop/icons/icons.dart';
 import 'package:aishop/addons/popup_menu_consts.dart';
@@ -11,7 +10,6 @@ import 'package:aishop/screens/search/search.dart';
 import 'package:aishop/screens/settings/settings.dart';
 import 'package:aishop/screens/wishlist/wishlistscreen.dart';
 import 'package:aishop/styles/theme.dart';
-
 import 'package:aishop/utils/authentication.dart';
 import 'package:aishop/utils/prod_num_badges.dart';
 import 'package:aishop/widgets/books/books.dart';
@@ -21,9 +19,7 @@ import 'package:aishop/widgets/kitchen/kitchen.dart';
 import 'package:aishop/widgets/recommendations/recommendations.dart';
 import 'package:aishop/widgets/shoes/shoes.dart';
 import 'package:aishop/widgets/tech/tech.dart';
-
 import 'package:badges/badges.dart';
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
