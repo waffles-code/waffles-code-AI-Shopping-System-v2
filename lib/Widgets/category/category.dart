@@ -1,5 +1,4 @@
-
-import 'package:aishop/screens/categories/beauty.dart';
+import 'package:aishop/screens/categories/shoes.dart';
 import 'package:aishop/screens/categories/books.dart';
 import 'package:aishop/screens/categories/clothes.dart';
 import 'package:aishop/screens/categories/kitchen.dart';

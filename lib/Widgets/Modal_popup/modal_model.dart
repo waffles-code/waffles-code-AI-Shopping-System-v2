@@ -1,5 +1,3 @@
-
-
 //model for modal pop up
 //displays image , price, name, description
 

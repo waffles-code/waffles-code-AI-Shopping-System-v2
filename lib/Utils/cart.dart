@@ -1,7 +1,4 @@
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'authentication.dart';
 
 class Cart  {
@@ -24,4 +21,3 @@ class Cart  {
     FirebaseFirestore.instance.collection('Users').doc(uid).collection("Cart").doc(id).delete();
   }
 }
-
