@@ -1,7 +1,6 @@
-
-import 'package:aishop/screens/address/first_delivary_page.dart';
+import 'package:aishop/screens/address/first_delivery_page.dart';
 import 'package:aishop/screens/cart/components/order_review.dart';
-import 'package:aishop/screens/delivery/components/checkoutdelivary.dart';
+import 'package:aishop/screens/delivery/components/checkoutdelivery.dart';
 import 'package:aishop/screens/homepage/homepage.dart';
 import 'package:aishop/styles/round_textfield.dart';
 import 'package:aishop/styles/textlink.dart';
@@ -9,8 +8,6 @@ import 'package:aishop/styles/theme.dart';
 import 'package:aishop/utils/authentication.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
-import 'package:line_icons/line_icons.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 class CheckOutAddress extends StatefulWidget {

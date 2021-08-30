@@ -1,5 +1,5 @@
 import 'package:aishop/screens/cart/components/order_review.dart';
-import 'package:aishop/screens/delivery/components/checkoutdelivary.dart';
+import 'package:aishop/screens/delivery/components/checkoutdelivery.dart';
 import 'package:aishop/screens/homepage/homepage.dart';
 import 'package:aishop/screens/past_purchases/pastpurchase.dart';
 import 'package:aishop/services/historytracker.dart';
